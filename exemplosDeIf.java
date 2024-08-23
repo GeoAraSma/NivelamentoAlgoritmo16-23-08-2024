@@ -1,9 +1,17 @@
+import java.util.Scanner;
+
 public class exemplosDeIf {
     public static void main(String[] args) {
-        if(2 <= 3 && 3 == 4){
-            System.out.println("Certo");
-        }else if (1 == 1){
-            System.out.println("Errado");
+    Scanner sc = new Scanner(System.in);
+
+        System.out.print("Insira um valor inteiro: ");
+        Integer numint = sc.nextInt();
+
+        if(numint%2==0){
+            System.out.println(numint+" é par.");
+        } else {
+            System.out.println(numint+" é impar.");
         }
+
     }
 }
